@@ -11,6 +11,6 @@ def testCordic():
         val = cordic.calcCordic(math.pi/(2*s))
 import timeit
 print(timeit.timeit(lambda:testTaylor(), number = 1))
-print('that was taylor ^')
+print('Taylor expansion ^')
 print(timeit.timeit(lambda:testCordic(), number = 1))
-print('that was Cordic ^')
+print('CORDIC algorithm ^')
