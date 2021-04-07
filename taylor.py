@@ -5,7 +5,7 @@ def calcTaylor(x):
     xMinusPiBy4 = x - math.pi/4
     oneByRootTwo = 1/math.sqrt(2)
     term = 1
-    for i in range(1,14):
+    for i in range(1,9):
         term = term * (xMinusPiBy4/i)
         modFour = i%4
         if modFour == 1 or modFour == 2:
