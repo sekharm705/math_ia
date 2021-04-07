@@ -3,14 +3,14 @@ values = file.read().split('\n')
 file.close()
 values = [int(i) for i in values[:-1]]
 #target = 1.0471 * (10**13)
-num_iters = 40
-K = 6072529350088
+num_iters = 20
+K = 607252935
 from math import *
 def calcCordic(target):
     
     cos,sin = K,0
     angle = 0
-    for i in range(40):
+    for i in range(num_iters):
     #print(cos*(1/((10**(13)))), sin*(1/((10**(13)))))
         if angle < target:
             angle += values[i]
